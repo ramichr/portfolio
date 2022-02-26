@@ -1,5 +1,5 @@
 import './portfolio.css'
 
 export default function Portfolio() {
-  return <section>Portfolio</section>
+  return <section id='portfolio'>Portfolio</section>
 }

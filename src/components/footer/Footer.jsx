@@ -1,5 +1,5 @@
 import './footer.css'
 
 export default function Footer() {
-  return <section>Footer</section>
+  return <div>Footer</div>
 }
