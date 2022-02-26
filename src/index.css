@@ -105,7 +105,6 @@ a:hover {
 img {
   display: block;
   width: 50%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -130,5 +129,17 @@ img {
 
   .section > h2 {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 1.5rem;
   }
 }
