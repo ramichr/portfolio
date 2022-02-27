@@ -1,3 +1,5 @@
+import { FaDownload } from 'react-icons/fa'
+
 export default function HeaderButtons() {
   return (
     <div className='header__buttons'>
@@ -8,7 +10,7 @@ export default function HeaderButtons() {
         rel='noopener noreferrer'
         className='btn'
       >
-        Download CV
+        Download CV <FaDownload />
       </a>
       <a href='#contact' className='btn btn-primary'>
         Contact Me

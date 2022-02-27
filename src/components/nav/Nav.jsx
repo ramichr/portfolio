@@ -27,15 +27,6 @@ export default function Nav() {
         <AiOutlineUser />
       </a>
       <a
-        href='#education'
-        onClick={() => {
-          setActiveNav('#education')
-        }}
-        className={activeNav === '#education' ? 'active' : ''}
-      >
-        <FaGraduationCap />
-      </a>
-      <a
         href='#skills'
         onClick={() => {
           setActiveNav('#skills')
