@@ -9,16 +9,16 @@ import Footer from './components/footer/Footer'
 
 export default function App() {
   return (
-    <>
-      <main className='container'>
+    <main>
+      <section className='container'>
         <Header />
         <Nav />
         <About />
         <Skills />
         <Portfolio />
         <Contact />
-        <Footer />
-      </main>
-    </>
+      </section>
+      <Footer />
+    </main>
   )
 }
