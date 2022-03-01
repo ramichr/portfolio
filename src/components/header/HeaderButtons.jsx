@@ -4,7 +4,7 @@ export default function HeaderButtons() {
   return (
     <div className='header__buttons'>
       <a
-        href='/assets/cv.pdf'
+        href='/assets/Rami-Cheikh_Rouhou-cv.pdf'
         alt='alt text'
         target='_blank'
         rel='noopener noreferrer'
