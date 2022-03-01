@@ -2,7 +2,6 @@ const personal = {
   firstName: 'Rami',
   lastName: 'Cheikh Rouhou',
   dateOfBirth: '10.10.1994',
-  placeOfBirth: 'Menzel Bourguiba, Tunisia',
   degree: 'Master in Media Informatics at TH Köln (Present)',
   job: 'Frontend Developer',
   languages: 'Arabic, English, German and French',
@@ -63,6 +62,11 @@ const backend = [
   },
   {
     id: 4,
+    skill: 'Rest API',
+    level: 'Beginner',
+  },
+  {
+    id: 5,
     skill: 'Git/Github',
     level: 'Experienced',
   },
