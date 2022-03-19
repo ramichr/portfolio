@@ -1,6 +1,6 @@
 import './nav.css'
 import { AiOutlineContacts, AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
-import { MdOutlineWork } from 'react-icons/md'
+import { MdOutlineWorkOutline } from 'react-icons/md'
 import { BiBook } from 'react-icons/bi'
 import { BsPalette } from 'react-icons/bs'
 import { useState } from 'react'
@@ -33,7 +33,7 @@ export default function Nav() {
         }}
         className={activeNav === '#experience' ? 'active' : ''}
       >
-        <MdOutlineWork />
+        <MdOutlineWorkOutline />
       </a>
       <a
         href='#skills'
