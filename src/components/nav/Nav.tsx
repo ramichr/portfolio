@@ -1,6 +1,6 @@
 import './nav.css'
 import { AiOutlineContacts, AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
-import { FaGraduationCap } from 'react-icons/fa'
+import { MdOutlineWork } from 'react-icons/md'
 import { BiBook } from 'react-icons/bi'
 import { BsPalette } from 'react-icons/bs'
 import { useState } from 'react'
@@ -25,6 +25,15 @@ export default function Nav() {
         className={activeNav === '#about' ? 'active' : ''}
       >
         <AiOutlineUser />
+      </a>
+      <a
+        href='#experience'
+        onClick={() => {
+          setActiveNav('#experience')
+        }}
+        className={activeNav === '#experience' ? 'active' : ''}
+      >
+        <MdOutlineWork />
       </a>
       <a
         href='#skills'

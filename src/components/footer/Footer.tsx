@@ -1,11 +1,13 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { personal } from '../../../data'
 import './footer.css'
 
 export default function Footer() {
+  const { firstName, lastName } = { ...personal }
   return (
-    <footer>
+    <footer id='footer'>
       <a href='#' className='footer__logo'>
-        rami://
+        {firstName} {lastName}
       </a>
       <ul className='footer__links'>
         <li>
@@ -35,9 +37,10 @@ export default function Footer() {
           <BsGithub />
         </a>
       </div>
-
       <div className='footer__copyrights'>
-        <small>&copy; Rami Cheikh Rouhou</small>
+        <small>
+          &copy; {firstName} {lastName}
+        </small>
       </div>
     </footer>
   )

@@ -6,18 +6,22 @@ export default function Portfolio() {
     <section id='portfolio'>
       <h2>Portfolio</h2>
       <div className='container portfolio__container'>
-        {portfolio.map(({ id, image, title, github, demo }) => {
+        {portfolio.map(({ ...project }) => {
           return (
-            <article key={id} className='portfolio__item'>
+            <article key={project.id} className='portfolio__item'>
               <div className='portfolio__item-image'>
-                <img src={image} alt={title} />
+                <img src={project.image} alt={project.title} />
               </div>
-              <h3>{title}</h3>
+              <h3>{project.title}</h3>
               <div className='portfolio__item-buttons'>
-                <a href={github} className='btn' target='_blank'>
+                <a href={project.github} className='btn' target='_blank'>
                   Github
                 </a>
-                <a href={demo} className='btn btn-primary' target='_top'>
+                <a
+                  href={project.demo}
+                  className='btn btn-primary'
+                  target='_top'
+                >
                   Live Demo
                 </a>
               </div>

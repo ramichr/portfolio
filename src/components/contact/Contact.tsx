@@ -72,7 +72,7 @@ export default function Contact() {
           <input type='text' name='subject' placeholder='Subject...' required />
           <textarea
             name='message'
-            rows='10'
+            rows={10}
             placeholder='Message...'
             required
           ></textarea>
