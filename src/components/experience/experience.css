@@ -53,7 +53,9 @@
 }
 
 .experience__content .experience__item .experience-years {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: fit-content;
   color: var(--color-white);
   background-color: var(--color-bg);
   text-transform: uppercase;
@@ -84,8 +86,8 @@
 }
 
 .experience__content:hover .experience__item .experience-location {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
+  background-color: var(--color-bg-variant);
+  color: var(--color-white);
 }
 
 .experience__content .experience__item .experience-title {
