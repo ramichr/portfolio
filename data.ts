@@ -5,13 +5,11 @@ interface Personal {
   degree: string
   languages: string
 }
-
 interface Skills {
   id: number
   skill: string
   level: string
 }
-
 interface Portfolio {
   id: number
   image: string
@@ -26,7 +24,7 @@ interface Experience {
   location: string
   position: string
   place: string
-  description: string
+  description: string[] | string
 }
 
 const personal: Personal = {
@@ -46,25 +44,20 @@ const frontend: Skills[] = [
   {
     id: 2,
     skill: 'CSS3',
-    level: 'Skillful',
+    level: 'Experienced',
   },
   {
     id: 3,
     skill: 'Javascript',
-    level: 'Skillful',
+    level: 'Experienced',
   },
   {
     id: 4,
     skill: 'Typescript',
-    level: 'Skillful',
+    level: 'Beginner',
   },
   {
     id: 5,
-    skill: 'Bootstrap',
-    level: 'Experienced',
-  },
-  {
-    id: 6,
     skill: 'TailwindCSS',
     level: 'Skillful',
   },
@@ -72,6 +65,11 @@ const frontend: Skills[] = [
     id: 7,
     skill: 'ReactJS',
     level: 'Skillful',
+  },
+  {
+    id: 8,
+    skill: 'VueJS',
+    level: 'Beginner',
   },
 ]
 const backend: Skills[] = [
@@ -97,11 +95,6 @@ const backend: Skills[] = [
   },
   {
     id: 5,
-    skill: 'MongoDB',
-    level: 'Skillful',
-  },
-  {
-    id: 6,
     skill: 'Git/Github',
     level: 'Experienced',
   },
@@ -139,8 +132,10 @@ const education: Experience[] = [
     location: 'Cologne, Germany',
     position: 'Master',
     place: 'Technische Hochschule Köln',
-    description:
-      'Course Study: Media Informatics, Specialty: Weaving the Web (Web Development)',
+    description: [
+      'Course Study: Media Informatics\n',
+      'Specialty: Weaving the Web (Web Development)',
+    ],
   },
   {
     id: 2,
@@ -148,7 +143,10 @@ const education: Experience[] = [
     location: 'Mateur, Tunisia',
     position: 'Bachelor',
     place: 'ISSAT Mateur',
-    description: 'Course Study: Informatics, Specialty: Software Development',
+    description: [
+      'Course Study: Informatics \n',
+      'Specialty: Software Development',
+    ],
   },
   {
     id: 3,
