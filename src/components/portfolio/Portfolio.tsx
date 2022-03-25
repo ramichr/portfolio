@@ -10,7 +10,11 @@ export default function Portfolio() {
           return (
             <article key={project.id} className='portfolio__item'>
               <div className='portfolio__item-image'>
-                <img src={project.image} alt={project.title} />
+                <img
+                  className='image'
+                  src={project.image}
+                  alt={project.title}
+                />
               </div>
               <h3>{project.title}</h3>
               <div className='portfolio__item-buttons'>
@@ -20,7 +24,7 @@ export default function Portfolio() {
                 <a
                   href={project.demo}
                   className='btn btn-primary'
-                  target='_top'
+                  target='_blank'
                 >
                   Live Demo
                 </a>
