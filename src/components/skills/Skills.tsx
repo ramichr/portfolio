@@ -5,7 +5,7 @@ import { frontend, backend } from '../../../data'
 export default function Skills() {
   return (
     <section id='skills'>
-      <h2>Skills</h2>
+      <h2>My Skills</h2>
       <div className='container skills__container'>
         {/* ==============Frontend=============== */}
         <div className='skills__frontend'>

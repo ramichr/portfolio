@@ -2,9 +2,10 @@ import './about.css'
 import { personal } from '../../../data'
 
 export default function About() {
-  const { firstName, lastName, dateOfBirth, degree, languages } = {
-    ...personal,
-  }
+  const { firstName, lastName, dateOfBirth, placeOfBirth, degree, languages } =
+    {
+      ...personal,
+    }
   return (
     <section id='about'>
       <h2>About Me</h2>
@@ -26,6 +27,9 @@ export default function About() {
             </h4>
             <h4>
               <span> Date of Birth : </span> {dateOfBirth}
+            </h4>
+            <h4>
+              <span> Place of Birth : </span> {placeOfBirth}
             </h4>
             <h4>
               <span> Degree : </span> {degree}

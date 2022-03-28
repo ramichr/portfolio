@@ -4,7 +4,7 @@ import { portfolio } from '../../../data'
 export default function Portfolio() {
   return (
     <section id='portfolio'>
-      <h2>Portfolio</h2>
+      <h2>My Projects</h2>
       <div className='container portfolio__container'>
         {portfolio.map(({ ...project }) => {
           return (

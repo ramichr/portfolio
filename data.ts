@@ -2,6 +2,7 @@ interface Personal {
   firstName: string
   lastName: string
   dateOfBirth: string
+  placeOfBirth: string
   degree: string
   languages: string
 }
@@ -31,6 +32,7 @@ const personal: Personal = {
   firstName: 'Rami',
   lastName: 'Cheikh Rouhou',
   dateOfBirth: '10.10.1994',
+  placeOfBirth: 'Menzel Bourguiba, Tunisia',
   degree: 'Master in Media Informatics at TH Köln (Present)',
   languages: 'Arabic, English, German and French',
 }
@@ -54,7 +56,7 @@ const frontend: Skills[] = [
   {
     id: 4,
     skill: 'Typescript',
-    level: 'Beginner',
+    level: 'Experienced',
   },
   {
     id: 5,
@@ -71,6 +73,11 @@ const frontend: Skills[] = [
     skill: 'VueJS',
     level: 'Beginner',
   },
+  {
+    id: 9,
+    skill: 'Figma',
+    level: 'Skillful',
+  },
 ]
 const backend: Skills[] = [
   {
@@ -85,13 +92,13 @@ const backend: Skills[] = [
   },
   {
     id: 3,
-    skill: 'Docker',
+    skill: 'Rest API',
     level: 'Skillful',
   },
   {
     id: 4,
-    skill: 'Rest API',
-    level: 'Beginner',
+    skill: 'Docker',
+    level: 'Skillful',
   },
   {
     id: 5,
