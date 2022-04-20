@@ -1,9 +1,10 @@
 import './experience.css'
 import { FaGraduationCap } from 'react-icons/fa'
 import { MdOutlineWork, MdLocationOn } from 'react-icons/md'
-import { education, work } from '../../../data'
+import { experience } from '../../../data.json'
 
 export default function Experience() {
+  const { education, work } = experience
   return (
     <section id='experience'>
       <h2>My Experience</h2>
@@ -27,7 +28,12 @@ export default function Experience() {
                       {position}
                       <span> - {place}</span>
                     </h5>
-                    <p className='experience-description'>{description}</p>
+                    <p className='experience-description'>
+                      {description.courseStudy}
+                    </p>
+                    <p className='experience-description'>
+                      {description.specialty}
+                    </p>
                   </li>
                 )
               }

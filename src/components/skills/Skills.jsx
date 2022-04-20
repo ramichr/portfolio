@@ -1,8 +1,9 @@
 import './skills.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
-import { frontend, backend } from '../../../data'
+import { skills } from '../../../data.json'
 
 export default function Skills() {
+  const { frontend, backend } = skills
   return (
     <section id='skills'>
       <h2>My Skills</h2>

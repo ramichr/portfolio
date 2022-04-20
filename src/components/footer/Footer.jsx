@@ -1,9 +1,11 @@
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
-import { personal } from '../../../data'
 import './footer.css'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { ImXing } from 'react-icons/im'
+import { firstName, lastName, socials } from '../../../data.json'
 
 export default function Footer() {
-  const { firstName, lastName } = { ...personal }
+  const date = new Date()
+  let year = date.getFullYear()
   return (
     <footer id='footer'>
       <a href='#' className='footer__logo'>
@@ -30,19 +32,19 @@ export default function Footer() {
         </li>
       </ul>
       <div className='footer__socials'>
-        <a
-          href='https://www.linkedin.com/in/rami-cheikh-rouhou/'
-          target='_blank'
-        >
+        <a href={socials.xing} target='_blank'>
+          <ImXing />
+        </a>
+        <a href={socials.linkedin} target='_blank'>
           <BsLinkedin />
         </a>
-        <a href='https://github.com/ramichr' target='_blank'>
+        <a href={socials.github} target='_blank'>
           <BsGithub />
         </a>
       </div>
       <div className='footer__copyrights'>
         <small>
-          &copy; {firstName} {lastName}
+          &copy; {year} {firstName} {lastName}
         </small>
       </div>
     </footer>

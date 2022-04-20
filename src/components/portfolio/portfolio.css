@@ -1,8 +1,9 @@
 .portfolio__container {
+  width: 90%;
   display: grid;
   place-content: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .portfolio__item {

@@ -1,11 +1,10 @@
 import './header.css'
 import HeaderButtons from './HeaderButtons'
 import HeaderSocials from './HeaderSocials'
-import { personal } from '../../../data'
+import { firstName, lastName } from '../../../data.json'
 import { FiChevronsDown } from 'react-icons/fi'
 
 export default function Header() {
-  const { firstName, lastName } = { ...personal }
   return (
     <header>
       <div className='container header__container'>

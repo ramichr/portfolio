@@ -1,5 +1,5 @@
 import './portfolio.css'
-import { portfolio } from '../../../data'
+import { portfolio } from '../../../data.json'
 
 export default function Portfolio() {
   return (

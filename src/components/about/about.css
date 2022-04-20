@@ -2,10 +2,12 @@
   display: grid;
   place-content: center;
   grid-template-columns: 40% 60%;
-  gap: 15%;
+  gap: 10%;
 }
 
 .about__me {
+  display: grid;
+  place-items: center;
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
@@ -15,8 +17,6 @@
     var(--color-primary),
     transparent
   );
-  display: grid;
-  place-items: center;
 }
 
 .about__me-image {
@@ -41,6 +41,7 @@
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  width: 100%;
 }
 
 .about__card h4 {
